@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f025585e-bea3-41a0-b325-c67d1866527b}">
+		<property name="assetPath">
+			<value>underwater-splashing.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.6163265306122447</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{839606e0-56f5-4476-9c52-206851716294}</destination>
+		</relationship>
+	</object>
+</objects>
