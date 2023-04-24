@@ -5,7 +5,7 @@
 			<value>playerImpact</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{37933542-e5c0-42c8-a3ab-aa8ad9ab0cf2}</destination>
@@ -92,6 +92,10 @@
 		<property name="length">
 			<value>6.1999531250000004</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{c76ad661-1301-41fb-b14d-23c5e0364aeb}</destination>
+			<destination>{2b2a1dd8-f529-455d-ae42-99d0f15034c3}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{e8689ea2-d613-4d42-88e1-a8d47cd92522}</destination>
 		</relationship>
@@ -117,12 +121,34 @@
 	</object>
 	<object class="MixerBusPanner" id="{22256cdf-dace-42da-8f0d-dc9c7377ebde}" />
 	<object class="MixerBusFader" id="{66aaf944-bfe9-4c2b-ad9b-32b978453892}" />
+	<object class="RandomizerModulator" id="{c76ad661-1301-41fb-b14d-23c5e0364aeb}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>2.5</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{2b2a1dd8-f529-455d-ae42-99d0f15034c3}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>6.25</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{62da2346-f817-4cf5-84cc-fb0bc7f3d9d3}">
 		<relationship name="effects">
 			<destination>{784b7557-518b-4ed5-a837-a0d916da39be}</destination>
+			<destination>{45f1aa8c-5f35-4ecd-9e85-65ed361931bc}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c30474a4-cc9c-4762-ae88-667f905e2857}" />
 	<object class="MixerBusFader" id="{69567c2f-800d-4955-96da-a800546e5d74}" />
 	<object class="MixerBusFader" id="{784b7557-518b-4ed5-a837-a0d916da39be}" />
+	<object class="SpatialiserEffect" id="{45f1aa8c-5f35-4ecd-9e85-65ed361931bc}">
+		<property name="panBlend">
+			<value>0.299999982</value>
+		</property>
+	</object>
 </objects>
